@@ -35,6 +35,8 @@
     <commons.lang3.version>3.4</commons.lang3.version>
     <commons.codec.version>1.9</commons.codec.version>
     <commons.io.version>2.5</commons.io.version>
+    <apach.commons.version>3.4</apach.commons.version>
+    <slf4j.version>1.7.7</slf4j.version>
   </properties>
 
   <dependencies>
@@ -51,6 +53,18 @@
           <artifactId>logback-core</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${apach.commons.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
 
     <!--邮件发送-->
